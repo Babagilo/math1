@@ -10,6 +10,18 @@
 
 **main - 1A.pdf和main - 1B.pdf分别是经过拆分后的上、下两册。**
 
+## 编译说明
+
+本项目应使用 XeLaTeX 编译。推荐命令如下：
+
+```sh
+latexmk -xelatex main.tex
+latexmk -xelatex "main - 1A.tex"
+latexmk -xelatex "main - 1B.tex"
+```
+
+仓库内已提供 `% !TeX program = xelatex` 魔法注释和 `latexmkrc`，用于提示编辑器和 `latexmk` 默认走 XeLaTeX 路线。
+
 **注意：本项目的内容勿用于商业目的。**
 
 # 目录
